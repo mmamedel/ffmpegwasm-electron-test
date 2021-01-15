@@ -1,0 +1,21 @@
+{
+  "$schema": "https://unpkg.com/app-builder-lib@22.9.1/scheme.json",
+  "appId": "com.simplevideotool.app",
+  "productName": "Simple Video Tool",
+  "copyright": "Copyright © 2020 Watch Tower Bible and Tract Society of Pennsylvania",
+  "win": {
+    "target": "nsis",
+    "icon": "icons/logo.ico",
+    "certificateSha1": "34838330E4DE93BE7378954C3F9633201B0D4B05"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": true,
+    "allowElevation": true,
+    "installerIcon": "icons/installer.ico"
+  },
+  "files": ["package.json", "build", "node_modules"],
+  "directories": {
+    "buildResources": "src/resources"
+  }
+}
