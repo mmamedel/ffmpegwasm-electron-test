@@ -9,9 +9,9 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      nodeIntegration: true,
-      webSecurity: false,
-      nodeIntegrationInWorker: true,
+      nodeIntegration: false,
+      webSecurity: true,
+      nodeIntegrationInWorker: false,
     },
     title: "@ffmpeg/ffmpeg test",
   });
