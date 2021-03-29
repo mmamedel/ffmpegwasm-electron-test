@@ -21,6 +21,9 @@ function App() {
     setVideoSrc(
       URL.createObjectURL(new Blob([data.buffer], { type: "video/mp4" }))
     );
+    if (window.electron) {
+      window.electron.exec('start https://www.electronjs.org/')
+    }
   };
   return (
     <div className="App">
