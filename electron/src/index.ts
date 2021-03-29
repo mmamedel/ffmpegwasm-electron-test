@@ -12,6 +12,8 @@ function createWindow() {
       nodeIntegration: false,
       webSecurity: true,
       nodeIntegrationInWorker: false,
+      contextIsolation: true,
+      preload: path.join(__dirname, 'preload.js'),
     },
     title: "@ffmpeg/ffmpeg test",
   });
